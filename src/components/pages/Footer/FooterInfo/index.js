@@ -4,13 +4,13 @@ function Footer({ currentPage, handlePageChange }) {
   return (
     <footer className="flex-row px-1">
            <p className="paragraph">
-              Erin and I are so very thankful that you have come out today to
-              support us. We don't expect anything from you just your physical
-              presence here today is all that we ask for. If you would like to
-              donate to our wishing well you're welcome to click any of the
-              links below. Donations will be used to help fund our honeymoon in
-              Hawaii. Also maybe if some billionair comes accross my website it
-              will be used to buy a nice fishing boat too...
+           Erin and I are so very thankful that you have come out today to
+             support us. We don't expect anything from you just your physical
+             presence here today is all that we ask for. If you would like to
+             donate to our wishing well you're welcome to click any of the
+             links below. Donations will be used to help fund our honeymoon in
+             Hawaii. Also maybe if some billionaire comes across my website it
+             will be used to buy a nice fishing boat too...
             </p>
       <nav>
         <h5>
