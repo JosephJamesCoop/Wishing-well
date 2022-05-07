@@ -1,29 +1,61 @@
+import React from "react";
 
-import React, { useState } from 'react';
-import FooterInfo from "./FooterInfo";
-import ApplePay from '../ApplePay';
-import Cash from '../Cash';
-
-export default function PortfolioContainer() {
-  const [currentPage, setCurrentPage] = useState('Home');
-
-const renderPage = () => {
-    if (currentPage === 'ApplePay') {
-      return <div className='align'> <ApplePay /></div>;
-    }
-    if (currentPage === 'Cash') {
-      return <div className='align'> <Cash /></div>;
-    }
-  };
-
-  const handlePageChange = (page) => setCurrentPage(page);
-
+function Footer({ currentPage, handlePageChange }) {
   return (
-    <>
-    <div>
- <FooterInfo currentPage={currentPage} handlePageChange={handlePageChange} />
-{renderPage()}
-    </div>
-    </>
+    <footer className="flex-row px-1">
+           <div class="my-info">
+        <h3>Thank you for atteneding our wedding:</h3>
+        <p className="paragraph">
+           Erin and I are so very thankful that you have come out today to
+             support us. We don't expect anything from you just your physical
+             presence here today is all that we ask for. If you would like to
+             donate to our wishing well you're welcome to click any of the
+             links below. Donations will be used to help fund our honeymoon in
+             Hawaii. Also maybe if some billionaire comes across my website it
+             will be used to buy a nice fishing boat too...
+            </p>
+            </div>
+      <nav>
+        <h5>
+          <ul className="flex-row">
+            <li className="mx-1 mx-3">
+              <a
+                href="#applePay"
+                onClick={() => handlePageChange("ApplePay")}
+                className={
+                  currentPage === "ApplePay" ? "nav-link active" : "nav-link"
+                }
+              >
+                Apple Pay
+              </a>
+            </li>
+            <li className="mx-1 mx-3">
+              <a
+                href="#cash"
+                onClick={() => handlePageChange("Cash")}
+                className={
+                  currentPage === "Cash" ? "nav-link active" : "nav-link"
+                }
+              >
+                Cash
+              </a>
+            </li>
+            <li className="mx-1 mx-3">
+              <a href="https://cash.app/$Cooper3869">Cash App</a>
+            </li>
+            <li className="mx-1 mx-3">
+              <a href="https://www.paypal.com/qrcodes/managed/286038ac-0322-4b3c-bb39-b40cc39d930e">
+                PayPal
+              </a>
+            </li>
+            <li className="mx-1 mx-3">
+              <a href="https://account.venmo.com/u/JosephJamesCoop">Venmo</a>
+            </li>
+          </ul>
+        </h5>
+      </nav>
+    </footer>
   );
 }
+
+export default Footer;

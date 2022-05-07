@@ -1,10 +1,6 @@
 import React from "react";
 import family from "../../../assets/cover/Family.jpg";
-import FirstConvo from "./FirstConvo";
-import LongConvo from "./LongConvo";
-import SealTheDeal from "./SealTheDeal";
-import FirstDate from "./FirstDate";
-import Proposal from "./Proposal";
+
 
 function About() {
   return (
@@ -21,11 +17,7 @@ function About() {
 
       <br></br>
       <div className="info">
-        <FirstConvo />
-        <LongConvo />
-        <SealTheDeal />
-        <FirstDate />
-        <Proposal />
+
       </div>
     </section>
 

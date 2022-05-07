@@ -106,7 +106,7 @@ nav  li {
 }
 
 .mx-2 {
-  margin-right: 150px;
+  margin-right: 30px;
   margin-left: 10px
 }
 
@@ -249,6 +249,12 @@ li:hover {
     width: 750px;
     height: auto;
   }
+  .mx-2 {
+    margin-left: -20px;
+  }
+  .flex-row {
+    margin-bottom: 0px;
+  }
 }
 
 @media screen and (max-width: 575px) {
@@ -282,5 +288,10 @@ li:hover {
   .mobile {
     font-size: .75rem;
     color: var(--primary);
+  }
+  .mx-22 {
+    margin-right: 70px;
+    margin-left: -5px;
+    margin-bottom: 15px
   }
 }
